@@ -28,7 +28,7 @@
  - Setup TS with react and Node/NestJS
  - Write type-safe, maintainable code
 
-Phase 5 : React.js Mastery 
+# Phase 5 : React.js Mastery 
  - Hooks : useState , useEffect, useContext, custom hooks
  - Component design and composition patterns
  - State management : Context API, Redux Toolkit basics
