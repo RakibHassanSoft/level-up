@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Click Debounce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen space-y-6">
+
+  <h1 class="text-2xl font-bold">Button Click Debounce Demo</h1>
+
+  <div class="text-lg">Raw Clicks: <span id="rawCount">0</span></div>
+  <div class="text-lg">Debounced Clicks: <span id="debouncedCount">0</span></div>
+
+  <button id="clickBtn" class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg shadow-lg transition">
+    Click Me
+  </button>
+
+<script>
+  // Debounce function
+  function debounce(func, delay) {
+    let timer;
+    return function(...args) {
+      clearTimeout(timer);
+      timer = setTimeout(() => func.apply(this, args), delay);
+    }
+  }
+
+  let rawClicks = 0;
+  const rawCount = document.getElementById('rawCount');
+  const debouncedCount = document.getElementById('debouncedCount');
+
+  // Function to update debounced counter
+  function updateDebounced() {
+    debouncedCount.textContent = rawClicks;
+  }
+
+  // Debounced version
+  const debouncedUpdate = debounce(updateDebounced, 1000); // 1 second delay
+
+  // Button click event
+  document.getElementById('clickBtn').addEventListener('click', () => {
+    rawClicks++;
+    rawCount.textContent = rawClicks;
+
+    debouncedUpdate(); // debounced update
+  });
+</script>
+
+</body>
+</html>
