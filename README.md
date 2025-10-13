@@ -28,28 +28,28 @@
  - Setup TS with react and Node/NestJS
  - Write type-safe, maintainable code
 
-# Phase 5 : React.js Mastery 
+## Phase 5 : React.js Mastery 
  - Hooks : useState , useEffect, useContext, custom hooks
  - Component design and composition patterns
  - State management : Context API, Redux Toolkit basics
  - React Router and nested routing
  - Performance : memoization, lazy loading , suspense basics
 
-# Phase 6: Styling & UI Best Practices 
+## Phase 6: Styling & UI Best Practices 
  - CSS-in-JS: Styled Components, Emotion
  - Responsive design & mobile-first approach
  - Accessibility (a11y): ARIA roles, semantic HTML
  - CSS preprocessors: SASS, PostCSS
  - UI performance optimization
 
-# Phase 7: Frontend Testing & Tooling 
+## Phase 7: Frontend Testing & Tooling 
  - Unit testing React with Jest & React Testing Library
  - E2E testing with Cypress or Playwright
  - Mocking, snapshot testing, code coverage
  - Debugging with React DevTools
  - Setup ESLint, Prettier, Husky for code quality enforcement
 
-# Phase 8: Next.js Advanced Usage 
+## Phase 8: Next.js Advanced Usage 
  - SSR, SSG, ISR concepts and when to use each
  - File-based routing & dynamic routes
  - Data fetching methods: getStaticProps, getServerSideProps, getStaticPaths
@@ -59,7 +59,7 @@
  - Deployment on Render
  - Using Ts with Next.js
 
-# Phase 9: Backend Development with Node.js & Express
+## Phase 9: Backend Development with Node.js & Express
  - Node.js event loop, core modules, streams
  - Express.js fundamentals, middleware, routing
  - REST API design & best practices
@@ -67,7 +67,7 @@
  - Basic security: helmet, rate limiting, input validation
 
 
-# Phase 10: Advanced Backend Concepts & NestJS Introduction
+## Phase 10: Advanced Backend Concepts & NestJS Introduction
  - NestJS fundamentals: modules, controllers, providers
  - Dependency injection, middleware, guards
  - Exception filters, pipes
